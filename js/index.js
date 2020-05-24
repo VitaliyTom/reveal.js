@@ -1,4 +1,5 @@
 import Deck, { VERSION } from './reveal.js'
+import Backgrounds from './controllers/backgrounds.js';
 
 /**
  * Expose the Reveal class to the window. To create a
@@ -35,7 +36,12 @@ Reveal.initialize = options => {
 	// Invoke any enqueued API calls
 	enqueuedAPICalls.map( method => method( Reveal ) );
 
-	return Reveal.initialize();
+	return Reveal.initialize({		
+		parallaxBackgroundImage: 'img/1.jpg', //'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'
+	  	parallaxBackgroundSize: '2560px 1440px',
+	  	parallaxBackgroundHorizontal: 50,
+		parallaxBackgroundVertical: 50
+	  });
 
 }
 

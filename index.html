@@ -1,40 +1,171 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+								<h1>LINUX KERNEL & LINUS TORVALDS</h1>
+							</section>
+			<section>
+							<h2>LINUX KERNEL</h2>
+							</section>
+			<section>
+				<p>What is the linux kernel?</p>
+			</section>
+			<section>
+				<p>The Linux® kernel is the main component of a Linux operating system (OS) and is the core interface
+					between a computer’s hardware and its processes</p>
+			</section>
+			<section>
+				<p>What the kernel does?</p>
+				<ul>
+					<li class="fragment">
+						<p>Memory management: Keep track of how much memory is used to store what, and where</p>
+					</li>
+					<li class="fragment">
+						<p>Process management: Determine which processes can use the central processing unit (CPU),
+							when, and for how long</p>
+					</li>
+					<li class="fragment">
+						<p>Device drivers: Act as mediator/interpreter between the hardware and processes</p>
+					</li>
+					<li class="fragment">
+						<p>System calls and security: Receive requests for service from the processes</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<section>
+					<p>What are the different types of Kernels?</p>
+				</section>
+				<section class="font_size_li">
+					<ul>
+						<p>Types of Kernels</p>
+						<li>
+							<p>Monolithic Kernel.</p>
+						</li>
+						<li>
+							<p>MicroKernel</p>
+						</li>
+						<li>
+							<p>Hybrid Kernel</p>
+						</li>
+						<li>
+							<p>Nanokernel</p>
+						</li>
+						<li>
+							<p>Exo-Kernel</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<p>Advantages and disadvantages of a monolithic kernel</p>
+				</section>
+				<section>
+					<p>Advantages of Monolithic Kernel</p>
+					<ul>
+						<li class="fragment">
+							<p>Smaller in Source and Compiled forms</p>
+						</li>
+						<li class="fragment">
+							<p>Less code generally means fewer bugs and security problems is also less</p>
+						</li>
+						<li class="fragment">
+							<p>System calls are used to do operations in monolithic kernel</p>
+						</li>
+						<li class="fragment">
+							<p>Execution is fast</p>
+						</li>
+						<li class="fragment">
+							<p>It has all the things in kernel itself so we don't need any extra mechanism for handling
+								of I/O and Process at the time of application making</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<p>Disadvantages of Monolithic Kernel</p>
+					<ul>
+						<li class="fragment">
+							<p>Coding in kernel space is hard, since you cannot use common libraries</p>
+						</li>
+						<li class="fragment">
+							<p>Debugging is harder, rebooting the computer is often needed</p>
+						</li>
+						<li class="fragment">
+							<p>Bugs in one part of kernel produce strong side effects</p>
+						</li>
+						<li class="fragment">
+							<p>Kernels often become very huge and difficult to maintain</p>
+						</li>
+						<li class="fragment">
+							<p>Not portable one
+								-Monolithic kernels must be rewritten for each new architecture that the OS is to be
+								used on</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+
+				<h2>LINUS BENEDICT TORVALDS</h2>
+
+				<img src="img/linus_torvalds.jpg" width="480px" height="300px">
+			</section>
+			<section>
+
+				<p>Torvalds was born in Helsinki, Finland, on 28 December 1969</p>
+			</section>
+			<section>
+				<p>His interest in computers began with a Commodore VIC-20, at the age of 11 in 1981</p>
+			</section>
+			<section>
+				<p>Torvalds attended the University of Helsinki between 1988 and 1996, graduating with a master's degree
+					in computer science from the NODES research group</p>
+			</section>
+			<section>
+				<section>
+					<p>Inspiringly reading a book by Andrew Tanenbaum on the Minix operating system, Linus created Linux
+						-
+						the kernel of the GNU / Linux operating system, which is the most popular server OS</p>
+				</section>
+				<section> <img src="img/tux.png" alt="tux" width="350px" height="400px"></section>
+				<section><p>THANK YOU</p></section>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
